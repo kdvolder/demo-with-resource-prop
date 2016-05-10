@@ -1,3 +1,4 @@
 my:
   welcome:
     resource: classpath:txt/welcome.txt
+    bonus: You won!

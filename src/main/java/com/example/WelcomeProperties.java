@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties("my.welcome")
 public class WelcomeProperties {
 
+	private String path;
 	private Resource resource;
 	private List<Color> colors;
 
@@ -27,6 +28,14 @@ public class WelcomeProperties {
 
 	public void setColors(List<Color> colors) {
 		this.colors = colors;
+	}
+
+	public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
 	}
 	
 	
